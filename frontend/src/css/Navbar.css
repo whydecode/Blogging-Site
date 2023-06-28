@@ -1,0 +1,35 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+}
+
+.navbar > h1 {
+  margin: 10px;
+}
+
+.logo {
+  text-decoration: none;
+  color: #000;
+  font-size: calc(10px + 1vw);
+}
+
+.username-div {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 50px;
+}
+.logoutButton {
+  background-color: transparent;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  text-decoration: underline;
+}
