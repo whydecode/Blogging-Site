@@ -12,7 +12,7 @@
 .logo {
   text-decoration: none;
   color: #000;
-  font-size: calc(10px + 1vw);
+  font-size: calc(10px + 0.6vw);
 }
 
 .username-div {

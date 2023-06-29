@@ -19,7 +19,7 @@ const HomeScreen = () => {
           </Link>
         ) : (
           <h3>
-            Please <Link to="/login">Login</Link> to create your own blogs
+            Please <Link to="/login">Login</Link> to create/edit your own blogs
           </h3>
         )}
       </div>

@@ -46,11 +46,11 @@
 
 .blog-head > div > h1 {
   font-size: calc(1.5rem + 2vw);
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 @media screen and (max-width: 768px) {
-  .blog-head  {
+  .blog-head {
     width: 100%;
   }
 }

@@ -69,3 +69,12 @@
 .signup-link a {
   text-decoration: underline;
 }
+
+@media screen and (max-width: 600px) {
+  .input-container input{
+    width: 85%;
+  }
+  .loginForm {
+    padding: 5%;
+  }
+}

@@ -4,24 +4,28 @@
   justify-content: center;
   margin: 0 auto;
   width: 80%;
+  flex-wrap: wrap;
 }
 .blog {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-between;
   width: 40%;
-  height: 80%;
-  margin: 20px;
+  min-height: 450px;
+  margin: 1%;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  height: fit-content;
 }
-
+.blog-info {
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+.blog-info > span {
+  margin: 0;
+  font-size: calc(0.5rem + 0.5vw);
+}
 .blog-image {
   width: 100%;
-  height: 60%;
-  object-fit: cover;
+  aspect-ratio: 16/9;
   border-radius: 5px;
 }
 
@@ -49,6 +53,17 @@
 
 .blog-content {
   width: 100%;
+  
+}
+
+.blog-content > h2{
+  font-size: calc(1.1rem + 1vw);
+  color: rgb(0, 99, 153);
+}
+
+.blog-content > p {
+  font-size: calc(0.6rem + 0.5vw);
+  color: rgb(0, 142, 198);
 }
 
 .del-button {
@@ -84,8 +99,11 @@
 @media screen and (max-width: 768px) {
   .blog-container {
     flex-direction: column;
+    margin: 0;
   }
   .blog {
-    width: 100%;
+    width: 90%;
+    margin: 10px 0;
+    padding: 5%;
   }
 }

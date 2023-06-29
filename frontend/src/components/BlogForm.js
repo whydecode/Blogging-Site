@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
-
+import "../css/BlogForm.css";
 const BlogForm = () => {
   const { blogId } = useParams();
   const [title, setTitle] = useState("");
@@ -70,30 +70,39 @@ const BlogForm = () => {
   }, [blogId]);
 
   return (
-    <form>
-      <div>
-        <label>Title:</label>
-        <input
-          type="text"
-          value={title}
-          onChange={(e) => setTitle(e.target.value)}
-        />
-      </div>
-      <div>
-        <label>Image:</label>
-        <input type="file" accept="image/*" onChange={uploadFileHandler} />
-      </div>
-      <div>
-        <label>Content:</label>
-        <textarea
-          value={content}
-          onChange={(e) => setContent(e.target.value)}
-        ></textarea>
-      </div>
-      <button type="submit" onClick={handleSubmit}>
-        {"Create Blog"}
-      </button>
-    </form>
+    <div className="blogform-container">
+      <form className="blog-form">
+        <div className="form-group">
+          <label>Title:</label>
+          <input
+            type="text"
+            className="form-input"
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
+          />
+        </div>
+        <div className="form-group">
+          <label>Image:</label>
+          <input
+            type="file"
+            accept="image/*"
+            className="form-input"
+            onChange={uploadFileHandler}
+          />
+        </div>
+        <div className="form-group">
+          <label>Content:</label>
+          <textarea
+            className="form-textarea"
+            value={content}
+            onChange={(e) => setContent(e.target.value)}
+          ></textarea>
+        </div>
+        <button type="submit" className="form-submit" onClick={handleSubmit}>
+          Create Blog
+        </button>
+      </form>
+    </div>
   );
 };
 
