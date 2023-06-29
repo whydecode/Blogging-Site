@@ -65,6 +65,11 @@ const MyBlogsScreen = () => {
         </button>
       </div>
       <div className="all-blogs">
+        <div className="blog-head">
+          <div>
+            <h1>My Blogs</h1>
+          </div>
+        </div>
         <div className="blog-container">
           {blogs.map((blog) => (
             <div key={blog._id} className="blog">
