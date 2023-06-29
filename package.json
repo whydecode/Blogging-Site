@@ -1,8 +1,8 @@
 {
   "name": "makcorps-crud",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Blogging-Site",
+  "main": "server.js",
   "scripts": {
     "build": "npm install && cd backend && npm install && cd ../frontend && npm install && npm run build",
     "start": "node backend/server",
@@ -12,7 +12,7 @@
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "keywords": [],
-  "author": "",
+  "author": "Rahul",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
