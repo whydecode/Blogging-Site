@@ -18,7 +18,7 @@ const HomeScreen = () => {
             Create New Blog
           </Link>
         ) : (
-          <h3>
+          <h3 className="home-login">
             Please <Link to="/login">Login</Link> to create/edit your own blogs
           </h3>
         )}

@@ -48,7 +48,9 @@
   font-size: calc(1.5rem + 2vw);
   font-family: "Courier New", Courier, monospace;
 }
-
+.home-login{
+  font-size: calc(0.8rem + 0.8vw);
+}
 @media screen and (max-width: 768px) {
   .blog-head {
     width: 100%;
